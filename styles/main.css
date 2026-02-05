@@ -25,6 +25,7 @@ blockquote {
     border-left: 8px solid steelblue;
     padding: 7px;
     background-color: rgb(203, 220, 243);
+    border-radius: 0 10px 10px 0;
 }
 
 header {
@@ -54,14 +55,105 @@ aside a, aside a:visited {
     color: maroon;
 }
 
-aside h2 {
-    padding-top: 20px;
+/* aside h2 {
+    padding-top: 25px;
+    text-align: center;
 }
 
 aside ul {
     margin-left: 8%;
     padding-left: 5%;
     line-height: 1.5;
+} */
+
+aside {
+    width: 30%;
+}
+
+/***************************
+Nav Menu
+****************************/
+#nav_menu {
+    border-bottom: 3px solid steelblue;
+    background-color: steelblue;
+}
+
+#nav_menu ul {
+    list-style-type: none;
+    position: relative;
+    display: flex;
+}
+
+#nav_menu li {
+    width: 20%;
+}
+
+#nav_menu a {
+    display: block;
+    color: white;
+    background-color: steelblue;
+    text-align: center;
+    padding: .7em 0;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+}
+
+#nav_menu ul ul li a {
+    text-align: left;
+    padding-left: .30em;
+}
+
+#nav_menu ul li:hover > ul {
+    display: block;
+}
+
+#nav_menu a:hover {
+    color: black;
+    background-color: lightsteelblue;
+}
+
+/*******************************
+Nav List
+*******************************/
+#nav_list h2 {
+    margin: 25px 0;
+    text-align: center;
+}
+
+#nav_list ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5em;
+}
+
+#nav_list li {
+    width: 90%;
+    border: 1px solid steelblue;
+    border-radius: 5px;
+}
+
+#nav_list a {
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: lightsteelblue;
+    padding: .5em;
+    color: black;
+    border-radius: 5px;
+}
+
+#nav_list a:hover {
+    background-color: steelblue;
+    color: white;
 }
 
 main {
@@ -69,7 +161,7 @@ main {
 }
 
 section {
-    max-width: 75%;
+    max-width: 70%;
 }
 
 section p {
